@@ -56,7 +56,7 @@ Now We are ready to use
 
 * In the terminal, open the project folder
 * Type "npm start" (without quotes)
-* Fill in all fields
+* Fill in the fields (target field is optional)
 * Wait the time
 * If all is correct, It's works
-  > ![Wroking](https://media.giphy.com/media/RkUfJYApjuca4kIcUq/giphy.gif)
+  > ![Working](https://media.giphy.com/media/RkUfJYApjuca4kIcUq/giphy.gif)
