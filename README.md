@@ -50,7 +50,7 @@ Now We are ready to use
   > <img src="https://imgur.com/3NYhewc.jpeg">
 * You will need to enter a Callback URI link and a website URL
   > <img src="https://imgur.com/hGLsKLX.jpeg">
-* Finally, copy all Keys and Tokens, and replace in file ".env"
+* Finally, copy all Keys and Tokens, and replace in src/libs/tokens.js
   > <img src="https://imgur.com/gKC8yPA.jpeg">
 
 ### Running
