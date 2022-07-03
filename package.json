@@ -1,0 +1,24 @@
+{
+  "name": "twitter-reply-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "Twitter",
+    "Bot",
+    "Auto",
+    "Automated"
+  ],
+  "author": "FredericXS",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-schedule": "^2.1.0",
+    "prompt-sync": "^4.2.0",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
+  },
+  "description": "This is a simple Twitter Reply Bot, choose a profile and It will reply automatically in a specific hour!",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
