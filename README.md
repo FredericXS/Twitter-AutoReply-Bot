@@ -11,7 +11,6 @@
    * [How to use](#how-to-use)
       * [Prerequisites](#prerequisits)
       * [Running](#running)
-   * [Licenses](#licenses)
 <!--te-->
 
 ## Install
