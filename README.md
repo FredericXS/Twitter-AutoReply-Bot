@@ -60,4 +60,4 @@ Now We are ready to use
 * Fill in all fields
 * Wait the time
 * If all is correct, It's works
-  > <video src="https://imgur.com/a/TC8yVmB">
+  > ![Wroking](https://media.giphy.com/media/RkUfJYApjuca4kIcUq/giphy.gif)
