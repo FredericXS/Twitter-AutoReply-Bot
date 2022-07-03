@@ -20,34 +20,27 @@ const client = new Twitter ({
 
 function tweetFuncs() {
     function postTweet() {
-        bot.post('statuses/update', {
-            // Posting tweet
-            status: tw.tweetText,
-            function (err) {
-                err ? console.log('ERROR: ' + err) : console.log('Tweet sent successfully!');
-            }
-        })
+        bot.post('statuses/update', { status: tw.tweetText },
+        function (err) {
+            err ? console.log('ERROR: ' + err) : console.log('Tweet sent successfully!');
+        });
     }
     
     function postTweetId(id) {
-        bot.post('statuses/update', {
-            // Setting up and posting tweet
-            in_reply_to_status_id: id,
-            status: `@${tw.target} ${tw.tweetText}`},
-            function (err) {
-                err ? console.log('ERROR: ' + err) : console.log(`Tweet sent successfully to @${tw.target}!`);
+        bot.post('statuses/update', { in_reply_to_status_id: id, status: `@${tw.target} ${tw.tweetText}` },
+        function (err) {
+            err ? console.log('ERROR: ' + err) : console.log(`Tweet sent successfully to @${tw.target}!`);
         });
     }
     
     function getLastTweet() {
-        client.get('search/tweets', {q: `from:${tw.target}`, count: 1}, function(error, tweets) { 
-        // Searching the most recent tweet
-        tweets.statuses.forEach(function(tweet) {
-                // Getting the ID
-                const tweetId = tweet.id_str;
-                postTweetId(tweetId);
+        client.get('search/tweets', {q: `from:${tw.target}`, count: 1},
+        function(error, tweets) { 
+            tweets.statuses.forEach(function(tweet) {
+                    const tweetId = tweet.id_str;
+                    postTweetId(tweetId);
+                });
             });
-        });
     }
 
     if (tw.target === '' || tw.target === undefined) {
